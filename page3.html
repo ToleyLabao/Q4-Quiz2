@@ -17,6 +17,15 @@
 
         <link rel="stylesheet" href="styles.css">
 
+        <script>
+            function show(page1, page2) {
+                var div1 = document.getElementById(page1);
+                var div2 = document.getElementById(page2);
+                div1.style = 'display: block;';
+                div2.style = 'display: none;';
+            }
+        </script>
+
         <style type="text/css">
 
             /*====Font Styling====*/
@@ -137,7 +146,7 @@
                         <button>Go to Top</button>
                     </a>
         
-                    <a href="page2">
+                    <a href="#" onclick="return show('page2','page1');">
                         <button>Next</button>
                     </a>
                 </div>
@@ -153,7 +162,7 @@
                     </border>
                 </footer>
 
-                <a href="page1" onclick="return show('page2','page1');">Next Page</a>
+                <a href="#" onclick="return show('page2','page1');">Next Page</a>
             </div>
 
     
@@ -229,7 +238,7 @@
                         <button>Go to Top</button>
                     </a>
         
-                    <a href="page1">
+                    <a href="#" onclick="return show('page1','page2');">
                         <button>Previous</button>
                     </a>
                 </div>
@@ -246,7 +255,7 @@
                     </border>
                 </footer>
 
-                <a href="page2" onclick="return show('page1','page2');">Previous Page</a>
+                <a href="#" onclick="return show('page1','page2');">Previous Page</a>
             </div>
         </section>
     </body>
