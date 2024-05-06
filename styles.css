@@ -1,0 +1,108 @@
+body {
+	 font-family:Comic Sans MS;
+	 background-image: linear-gradient(#b0b0b080, #b0b0b080), url(https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/12/12153020/Philippines-Tourism-1600x900.jpg);
+	 background-repeat:no-repeat;
+	 background-attachment:fixed;
+	 color:#420C14;
+	 }
+
+header  {
+		text-align:center;
+		letter-spacing:10px;
+		background-color:#BAD9B5;
+		background-image:linear-gradient(to bottom, #9FA4A9 60%, #e6cdae);
+		opacity:0.7;
+		padding:25px;
+		font-size:125%;
+		}	
+
+a {
+  color:#2B2D42;
+  }
+
+a:hover {
+		color:#456990;
+		}
+
+footer  {
+		background-color:#9FA4A980;
+		border: 2px dashed #000000;
+		margin-top:25px;
+		padding:10px;
+		}
+
+button  {
+		opacity:0.6;
+		background-color:#9FA4A980;
+		border: 1px solid #000000;
+		padding: 14px 28px;
+		font-size: 25px;
+		border-radius:4px;
+		box-shadow: 0 5px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+		align-items:center;
+		}
+
+button:hover {
+			 opacity:1;
+			 }
+
+#intro  {
+		text-align:justify;
+		background-color:#E1DABD80;
+		padding:20px;
+		border: 1px dotted #000000;
+		margin-top:30px;
+		margin-bottom:30px;
+		margin-left:150px;
+		margin-right:150px;
+		}
+
+.attractions {
+    		  text-align: center;
+  			  display:inline-flex;
+  			  flex-wrap:wrap;
+  			  column-gap:20px;
+  			  row-gap:20px;
+  			  justify-content: center;
+			  }
+
+.media  {
+		background-color:#F1DEDC50;
+		box-shadow: 0 5px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+		padding:10px;
+		}
+
+.info {
+	 background-color:#F1DEDC50;
+	 box-shadow: 0 5px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+	 padding:10px;
+	 width: 350px;
+  	 height: 350px;
+  	 display: flex;
+  	 flex-direction:column;
+	 justify-content: center;
+	 align-items: center;
+	 }
+
+.info p  {
+		text-align:justify;
+		padding-left:20px;
+		padding-right:20px;
+		}
+
+.img {
+	 opacity:0.7;
+	 width: 350px;
+  	 height: 350px;
+  	 object-fit:cover;
+	 }
+
+.img:hover {
+		   opacity:1;
+		   }
+
+.buttons {
+		 margin-top:25px;
+		 margin-bottom:25px;
+		 text-align:center;
+		 }

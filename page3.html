@@ -7,12 +7,15 @@
 
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
         <!--GFonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Playpen+Sans:wght@400;500&display=swap" rel="stylesheet">
         <title>Quiz 2</title>
+
+        <link rel="stylesheet" href="styles.css">
 
         <style type="text/css">
 
@@ -26,77 +29,224 @@
     </head>
 
     <body>
-        <nav class="sticky-top mb-3 d-md-flex d-none navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse d-flex flex-row justify-content-between">
-                    <ul class="navbar-nav">
-                        <div class="navbar-brand bg-info rounded-circle">
-                            <img height="48" src="https://www.top-hat.net/images/tophat.png">
-                        </div>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">1st Quarter</a>
-                            <ul class="dropdown-menu text-muted">
-                                <p class="mx-2">HyperText Markup Language</p>
-                                <li><a class="dropdown-item" href="1stQuarter/exercise1.html">Exercise 1</a></li>
-                                <li><a class="dropdown-item" href="1stQuarter/exercise2.html">Exercise 2</a></li>
-                                <li><a class="dropdown-item" href="1stQuarter/seatwork1.html">Seatwork 1</a></li>
-                                <li><a class="dropdown-item" href="1stQuarter/seatwork2.html">Seatwork 2</a></li>
-                                <li><a class="dropdown-item" href="1stQuarter/project.html">Project</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">2nd Quarter</a>
-                            <ul class="dropdown-menu text-muted">
-                                <p class="mx-2">Cascading Style Sheets</p>
-                                <li><a class="dropdown-item" href="2ndQuarter/exercise1.html">Exercise 1</a></li>
-                                <li><a class="dropdown-item" href="2ndQuarter/exercise2.html">Exercise 2</a></li>
-                                <li><a class="dropdown-item" href="2ndQuarter/seatwork1.html">Seatwork 1</a></li>
-                                <li><a class="dropdown-item" href="2ndQuarter/seatwork2.html">Seatwork 2</a></li>
-                                <li><a class="dropdown-item" href="2ndQuarter/project.html">Project</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">3rd Quarter</a>
-                            <ul class="dropdown-menu text-muted">
-                                <p class="mx-2">Bootstrap 5</p>
-                                <li><a class="dropdown-item" href="3rdQuarter/seatwork1.html">Seatwork 1</a></li>
-                                <li><a class="dropdown-item" href="3rdQuarter/seatwork2.html">Seatwork 2</a></li>
-                                <li><a class="dropdown-item" href="3rdQuarter/quiz1.html">Quiz 1</a></li>
-                                <li><a class="dropdown-item" href="3rdQuarter/quiz2.html">Quiz 2</a></li>
-                                <li><a class="dropdown-item" href="3rdQuarter/project.html">Project</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">4th Quarter</a>
-                            <ul class="dropdown-menu text-muted">
-                                <p class="mx-2">JavaScript</p>
-                                <li><a class="dropdown-item" href="4thQuarter/seatwork1.html">Seatwork 1</a></li>
-                                <li><a class="dropdown-item" href="4thQuarter/seatwork2.html">Seatwork 2</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Quiz 1 (Activity)</a></li>
-                                <li><a class="dropdown-item disabled" href="4thQuarter/project.html">Quiz 2</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Project</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex gap-2">
-                        <input class="rounded-pill form-control" name="q" type="text" placeholder="...">
-                        <button class="btn btn-danger rounded-pill" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
         
-        <section id="portfolio" class="px-3">
-            <div class="text-center">
-                <h1 class="text-random-effect">My Portfolio</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoF8FgHBO_ScvtHNRDgUB8K0toH2LMQ_CTvQ&usqp=CAU"height="50" class="rounded-circle" alt="logo">
+            </a>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Log-In</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mainpage.html">Home</a>
+                    </li>
 
-                <div id="logo-container" style="height: 164px;">
-                    <img id="logo" height="164" src="https://www.top-hat.net/images/tophat.png">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page2.html">1st Quarter</a>
+                    </li>
+                </ul>
+
+                <!-- Form -->
+
+                <form class="d-flex gap-2">
+                        <input class="rounded-pill form-control" name="Search" type="text" placeholder="Search Here">
+                        <button class="btn btn-info rounded-pill" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        </nav><br/>
+
+        
+        <section id="project" class="px-3">
+            <div id="page1">
+                <header>
+                    <h1>Photo Album</h1>
+                </header>
+
+                <!--Intro-->
+
+                <div id="intro">
+                    <border>
+                        <p>The Philippines is an archipelagic country located in Southeast Asia. It consists of 7641 islands, which makes it the second-largest archipelago in the world.</p>
+
+                        <p>Listed here are six landmarks that I personally love:</p>
+                    </border>
                 </div>
+
+                <!--Places-->
+
+                <div class="attractions">
+
+                <!--Calle Crisologo, Vigan-->
+
+                <section class="info">
+                    <h3>Calle Crisologo, Vigan</h3>
+                        <p>-A 16th-century town<br/>
+                        -UNESCO World Heritage Site<br/>
+                        -Has Spanish colonial architecture and is the top attraction in Vigan, Ilocos</p>
+                </section>
+
+                <!--Calle Crisologo Picture-->
+
+                <section class="media">
+                    <img class="img" src="https://gttp.imgix.net/222039/x/0/15-best-tourist-spots-in-the-philippines-beaches-diving-spots-rivers-waterfalls-historic-sites-4.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Calle Crisologo">
+                </section>
+
+                <!--Intramuros and Fort Santiago, Manila-->
+
+                <section class="info">
+                    <h3>Intramuros and Fort Santiago, Manila</h3>
+                        <p>-64-hectare Spanish fortress<br/>
+                        -Erected by Miguel Lopez de Legazpi<br/>
+                        -Destroyed by the end of World War II</p>
+                </section>
+
+                <!--Intramuros and Fort Santiago Picture-->
+
+                <section class="media">
+                    <img class="img" src="https://gttp.imgix.net/222141/x/0/15-best-tourist-spots-in-the-philippines-beaches-diving-spots-rivers-waterfalls-historic-sites-13.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Intramuros and Fort Santiago">
+                </section>
+
+                <!--Rizal Park, Manila-->
+
+                <section class="info">
+                    <h3>Rizal Park, Manila</h3>
+                        <p>-More commonly known as Luneta<br/>
+                        -60-hectare urban park<br/>
+                        -Marks the execution site of Dr. Jose Rizal</p>
+                </section>
+
+                <!--Rizal Park Picture-->
+
+                <section class="media">
+                    <img class="img" src="https://gttp.imgix.net/222142/x/0/15-best-tourist-spots-in-the-philippines-beaches-diving-spots-rivers-waterfalls-historic-sites-22.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Rizal Park">
+                </section>
                 
+                </div>
+
+                <!--Buttons-->
+
+                <div class="buttons">
+                    <a href="#top">
+                        <button>Go to Top</button>
+                    </a>
+        
+                    <a href="page2">
+                        <button>Next</button>
+                    </a>
+                </div>
+
+                <!--References-->
+
+                <footer>
+                    <border>
+                        <small>References:</small><br>
+                        <ul>
+                            <li><small>YaÃ±ez, G. (n.d.). <em>15 best tourist spots in the Philippines: beaches, diving spots, rivers, waterfalls, historic sites.</em> Guide to the Philippines. <a href="https://guidetothephilippines.ph/articles/what-to-experience/top-tourist-spots-philippines" target="_blank">https://guidetothephilippines.ph/articles/what-to-experience/top-tourist-spots-philippines</a></small></li>
+                        </ul>
+                    </border>
+                </footer>
+
+                <a href="page1" onclick="return show('page2','page1');">Next Page</a>
+            </div>
+
+    
+            <div id="page2" style="display:none">
+                <header>
+                    <h1>Photo Album</h1>
+                </header>
+
+                <!--Intro-->
+
+                <div id="intro">
+                    <border>
+                        <p>The Philippines is an archipelagic country located in Southeast Asia. It consists of 7641 islands, which makes it the second-largest archipelago in the world.</p>
+
+                        <p>Listed here are six landmarks that I personally love:</p>
+                    </border>
+                </div>
+
+                <!--Places-->
+
+                <div class="attractions">
+
+                <!--Puerto Princesa Underground River, Palawan-->
+
+                <section class="info">
+                    <h3>Puerto Princesa Underground River, Palawan</h3>
+                        <p>-gateway to the Philippines’ Last Frontier<br/>
+                        -world’s longest navigable underground river<br/>
+                        -UNESCO World Heritage Site</p>
+                </section>
+
+                <!--Puerto Princesa Underground River Picture-->
+
+                <section class="media">
+                    <img class="img" src="https://gttp.imgix.net/222035/x/0/15-best-tourist-spots-in-the-philippines-beaches-diving-spots-rivers-waterfalls-historic-sites-30.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Puerto Princesa Underground River">
+                </section>
+
+                <!--White Beach, Boracay-->
+
+                <section class="info">
+                    <h3>White Beach, Boracay</h3>
+                        <p>-4-kilometer stretch of pure white, powdery sand<br/>
+                        -"postcard-perfect"</p>
+                </section>
+
+                <!--White Beach Picture-->
+
+                <section class="media">
+                    <img class="img" src="https://gttp.imgix.net/222336/x/0/15-best-tourist-spots-in-the-philippines-beaches-diving-spots-rivers-waterfalls-historic-sites-34.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="White Beach">
+                </section>
+
+                <!--Banaue Rice Terraces, Ifugao-->
+
+                <section class="info">
+                    <h3>Banaue Rice Terraces, Ifugao</h3>
+                        <p>-A UNESCO World Heritage Site<br/>
+                        -It offers spectacular views of emerald hues<br/>
+                        -rice-growing seasons are April-May and October-November</p>
+                </section>
+
+                <!--Banaue Rice Terraces Picture-->
+
+                <section class="media">
+                    <img class="img" src="https://gttp.imgix.net/222332/x/0/15-best-tourist-spots-in-the-philippines-beaches-diving-spots-rivers-waterfalls-historic-sites-24.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883" alt="Banaue Rice Terraces">
+                </section>
+                
+                </div>
+
+                <!--Buttons-->
+
+                <div class="buttons">
+                    <a href="#top">
+                        <button>Go to Top</button>
+                    </a>
+        
+                    <a href="page1">
+                        <button>Previous</button>
+                    </a>
+                </div>
+
+                <!--References-->
+
+                <footer>
+                    <border>    
+                        <small>References:</small><br>
+                
+                        <ul>
+                            <li><small>YaÃ±ez, G. (n.d.). <em>15 best tourist spots in the Philippines: beaches, diving spots, rivers, waterfalls, historic sites.</em> Guide to the Philippines. <a href="https://guidetothephilippines.ph/articles/what-to-experience/top-tourist-spots-philippines" target="_blank">https://guidetothephilippines.ph/articles/what-to-experience/top-tourist-spots-philippines</a></small></li>
+                        </ul>
+                    </border>
+                </footer>
+
+                <a href="page2" onclick="return show('page1','page2');">Previous Page</a>
             </div>
         </section>
     </body>
